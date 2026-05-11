@@ -56,7 +56,7 @@ function loadCharacter() {
     const charId = params.get("character");
     currentCharacter = characterData.find(({ id }) => id === charId);
     if (currentCharacter) {
-        elAvatar.src = "../Beelden/" + currentCharacter.img;
+        elAvatar.src = "./Beelden/" + currentCharacter.img;
         elName.innerHTML = currentCharacter.name;
     }
 }
