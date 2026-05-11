@@ -1,0 +1,221 @@
+:root {
+   --color-dark: #231f20;
+   --color-yellow: #FFCC00;
+}
+
+
+body {
+   background-color: var(--color-dark);
+    font-size: 14px;
+    color: var(--color-dark);
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    
+ }
+
+.mobile-only {
+       background-color: var(--color-yellow);
+   max-width: 600px;
+   margin: auto;
+}
+
+
+
+/* START pagina */
+
+ .logo {
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+ }
+
+ .knop {
+    color:  #FFCC00;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 70px;
+    background-color: #231f20;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: 900;
+    font-size: 18pt;
+ }
+
+
+
+
+ /* KIES CHARACTER */
+
+.kiescharacter {
+    text-transform: uppercase;
+    color:  #FFCC00;
+    display: inline-block;
+    margin-top: 100px;
+    background-color: #231f20;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: 900;
+}
+
+img {
+   max-width: 100%;
+}
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.card {
+   width: 50%;
+}
+
+
+
+
+
+ /* INVENTORY */
+
+ header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1rem;  
+      padding-right: 12px;
+ }
+
+ header img {
+      width: 30%;
+ }
+
+ header h1 {
+   margin-top: 12px;
+   background-color: #231f20;
+   color: #FFCC00;
+   padding: 0.5rem;
+   font-size: 1.5rem;
+}
+
+
+.btn-row {
+   padding: 12px;
+   display: flex;
+   justify-content: space-between;
+   gap: 0.3rem;
+   margin-top: 1rem;
+}
+
+.btn {
+   background-color: var(--color-dark);
+   color: var(--color-yellow);
+   font-weight: 600;
+   font-size: 12px;
+   display: block;
+   cursor: pointer;
+   border: none;
+   padding: 0.5rem 1rem;
+}
+
+.table {
+   margin-top: 1rem;
+   border: 1px solid #FFCC00;
+   text-align: left;
+   padding: 12px
+}
+
+th, td {
+      padding: 1rem;
+}
+
+th {
+   background-color: var(--color-dark);
+   color: var(--color-yellow);
+   padding: 0.5rem;
+   font-size: 16px;
+}
+
+td:first-child {
+   width: 20%;
+}
+
+
+/* POPUP */
+
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.popup.hidden {
+   display: none;
+}
+
+.popup-content {
+   background-color: var(--color-yellow);
+   padding: 2rem;
+   border: 2px solid var(--color-dark);
+   border-radius: 10px;
+   text-align: center;
+}
+
+.popup-content h2 {
+   margin-bottom: 1rem;
+}
+
+.popup-content ul {
+   list-style: none;
+   padding: 0;
+   margin-bottom: 1rem;
+}
+
+.popup-content li {
+   margin: 0.5rem 0;
+}
+
+#popup-button {
+   background-color: var(--color-dark);
+   color: var(--color-yellow);
+   border: none;
+   padding: 0.5rem 1rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+/* ANIMATIES */
+
+@keyframes popupSlideIn {
+   from {
+      opacity: 0;
+      transform: scale(0.8);
+   }
+   to {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+.popup:not(.hidden) .popup-content {
+   animation: popupSlideIn 0.4s ease-out;
+}
+
+@keyframes itemReveal {
+   0% {
+      color: #999;
+   }
+   100% {
+      color: var(--color-dark);
+   }
+}
+
+.popup-content li.animating {
+   animation: itemReveal 0.6s ease-in;
+   font-weight: 600;
+}

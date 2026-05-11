@@ -1,0 +1,38 @@
+analyseer eerst de bestaande codebasE
+deze applicatie werkt aanvullend op een kaartspel (Infinite ikea)
+
+elke speler heeft dit open staan en houdt zo de eigen inventory bij
+
+
+inventory.html is een digitale inventory voor ons Infinite Ikea spel waar je items moet verzamelen en gebruiken
+
+er zijn 3 soorten fysieke kaarten waarvoor we een generator nodig hebben in deze app
+1 de witte kaarten
+als je op de knop van de witte kaart klikt (id Wittekaart) dan moeten er een aantal items gegeneerd worden die worden toegevoegd aan de inventory. er wordt at random uit een tier hieronder gekozen waarbij tier 2 de grootste probalitiet heeft
+
+Tier 1: 2 kleine items (schroev, houteding, imbus)
+Tier 2: 1 groot item (hamer, schroevendraaier) + 3 kleine items (schroev, houteding, imbus)
+Tier 3: 2 grote items (hamer, schroevendraaier) + 4 kleine items (schroev, houteding, imbus)
+Tier 2 moet het meeste voorkomen, de andere minder
+
+Deze items moeten ook meteen worden toegevoegd aan de inventory als je op de knop "toevoegen" klikt (deze knop moet nog worden toegevoegd)
+De items die je krijgt moeten getoond worden op een pop-up met de extra knop "toevoegen"
+Als je klikt op de knop "toevoegen", verdwijnt de pop-up
+
+2 de zwarte kaart
+Als je op de knop van de zwarte kaart klikt (id Zwartekaart) dan moeten er een aantal items gegenereerd worden die worden weggehaald van de inventory
+Tier 1: 2 kleine items (schroev, houteding, imbus)
+Tier 2: 1 groot item (hamer, schroevendraaier) + 2 kleine items (schroev, houteding, imbus)
+Tier 3:  1 groot item (hamer, schroevendraaier) + 3 kleine items (schroev, houteding, imbus)
+Tier 1 moet het meeste voorkomen, ook regelmatig tier 2, tier 3 af en toegevoegd
+Deze itels moeten ook meteen weggehaald worden van de inventory als je op de knop "gebruiken" klikt
+De items die verdwinen (die moet je afgeven) moeten getoond worden op een pop-up met de extra knop "gebruiken"
+Als je klikt op de knop "gebruiken", verdwijnt de pop-up
+
+3 de kollega kaart
+Als je op de knop Kollega klikt (id Monster) dan moeten er een aantal items gegenereerd worden die worden weggehaald van de inventory
+Tier 1: 2 grote items (hamer, schroevendraaier) + 3 kleine items (schroev, houteding, imbus)
+Tier 2: 2 grote items (hamer, schroevendraaier) + 4 kleine items (schroev, houteding, imbus)
+Deze itels moeten ook meteen weggehaald worden van de inventory als je op de knop "vechten!" klikt
+De items die je afgeeft moeten getoond worden op een pop-up met de extra knop "vechten!"
+Als je klikt op de knop "vechten!", verdwijnt de pop-up
