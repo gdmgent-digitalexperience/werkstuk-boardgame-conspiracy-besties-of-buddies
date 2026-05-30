@@ -99,6 +99,8 @@ img {
 }
 
 
+
+
 .btn-row {
    padding: 12px;
    display: flex;
@@ -119,14 +121,19 @@ img {
 }
 
 .table {
-   margin-top: 1rem;
-   border: 1px solid #FFCC00;
+   margin: 1rem auto;
+   width: min(90%, 600px);
+   border-collapse: collapse;
+   border: 3px solid #000;
    text-align: left;
-   padding: 12px
+   padding: 12px;
 }
 
-th, td {
-      padding: 1rem;
+.table th,
+.table td {
+   border-bottom: 3px solid #000;
+   padding: 1rem;
+   font-weight: 600;
 }
 
 th {
